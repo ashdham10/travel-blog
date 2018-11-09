@@ -1,0 +1,4 @@
+.jumbotron {
+    background-image: url("../travel-image.jpg") no-repeat center center;
+    background-size: cover;
+}
