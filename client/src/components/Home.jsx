@@ -27,7 +27,7 @@ render(){
                         <div className="card-body">
                             <h3 className="card-title">{blog.title}</h3>
                             <p>{blog.content}</p>
-                            <Link to={`/api/blogs/${blog.id}`} className="btn btn-primary">Read More..</Link>
+                            <Link to={`/blogs/${blog.id}`} className="btn btn-primary">Read More..</Link>
                         </div>
                     </div>
                 </div>
