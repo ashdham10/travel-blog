@@ -19,7 +19,7 @@ class Header extends Component {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item active">
-                            <Link to="/Home" className="nav-link" href="#">Home <span className="sr-only">(current)</span></Link>
+                            <Link to="/" className="nav-link" href="#">Home <span className="sr-only">(current)</span></Link>
                         </li>
                         <li className="nav-item">
                             <Link to="/AddBlog" className="nav-link" href="#">Add Blog</Link>
@@ -29,7 +29,7 @@ class Header extends Component {
             </nav> 
 
             {/* JUMBOTRON */}
-            <div className="jumbotron jumbotron-fluid">
+            <div className="jumbotron jumbotron-fluid text-center">
                 <div className="container">
                    
                     <h1 className="display-4" style={{fontFamily:'Shadows Into Light'}} > <i class="fas fa-globe-americas"></i> Travel Blog...</h1>

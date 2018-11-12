@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
+import { Link } from 'react-router-dom';
 
 class Home extends Component {
     constructor(props){
@@ -24,10 +25,9 @@ render(){
             <div className="row" key={blog.id}>
                     <div className="card col-13">
                         <div className="card-body">
-                            <h5 className="card-title">{blog.title}</h5>
-                            <p className="card-text">Written by {blog.author}</p>
+                            <h3 className="card-title">{blog.title}</h3>
                             <p>{blog.content}</p>
-                            {/* <Link to={`/Movies/${film.id}`} className="btn btn-primary">Movie Details</Link> */}
+                            <Link to={`/api/blogs/${blog.id}`} className="btn btn-primary">Read More..</Link>
                         </div>
                     </div>
                 </div>
