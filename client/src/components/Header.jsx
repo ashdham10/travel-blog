@@ -33,7 +33,7 @@ class Header extends Component {
                 <div className="container">
                    
                     <h1 className="display-4" style={{fontFamily:'Shadows Into Light'}} > <i class="fas fa-globe-americas"></i> Travel Blog...</h1>
-                    <p className="lead" style={{fontFamily:'Amatic SC, cursive'}}>Tell us about your adventures!</p>
+                    <p className="lead" style={{fontFamily:'Amatic SC, cursive, bold'}}>Tell us about your adventures!</p>
                 </div>
             </div>
         </React.Fragment>

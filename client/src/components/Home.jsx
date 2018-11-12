@@ -23,11 +23,11 @@ render(){
     return this.state.blogs.map(blog => {
         return (
             <div className="row" key={blog.id}>
-                    <div className="card col-13">
+                    <div className="card col-13 mt-20">
+                    <div className="card-header">{blog.title}</div>
                         <div className="card-body">
-                            <h3 className="card-title">{blog.title}</h3>
                             <p>{blog.content}</p>
-                            <Link to={`/blogs/${blog.id}`} className="btn btn-primary">Read More..</Link>
+                            <Link to={`/blogs/${blog.id}`} className="btn btn-success">Read More..</Link>
                         </div>
                     </div>
                 </div>

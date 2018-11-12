@@ -20,8 +20,8 @@ class Blog extends Component {
     render(){
         return (
             <div className="card" >
+            <div className="card-header">{this.state.blog.title}</div>
                 <div className="card-body">
-                    <h5 className="card-title">{this.state.blog.title}</h5>
                     <p className="card-text">{this.state.blog.content}</p>
                     <p className="card-text">Created: {this.state.blog._created}</p>
                 </div>
