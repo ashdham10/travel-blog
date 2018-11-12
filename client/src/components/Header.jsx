@@ -29,7 +29,7 @@ class Header extends Component {
             </nav> 
 
             {/* JUMBOTRON */}
-            <div className="jumbotron jumbotron-fluid text-center" >
+            <div className="jumbotron jumbotron-fluid text-center">
                 <div className="container">
                    
                     <h1 className="display-4" style={{fontFamily:'Shadows Into Light'}} > <i class="fas fa-globe-americas"></i> Travel Blog...</h1>
