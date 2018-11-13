@@ -2,3 +2,18 @@
     background-image: url("/jumbo-bg.jpg");
     background-size: cover;
 }
+
+body {
+  background-color: lightgrey;
+
+}
+
+#blogCard {
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+#addBlog {
+    margin: 20px;
+
+}

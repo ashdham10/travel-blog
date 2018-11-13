@@ -45,7 +45,7 @@ class AddBlog extends Component {
 
     render(){
     return (
-        <div>
+        <div id="addBlog">
         <form>
             <div className="form-group">
                 <label for="blogTitle">Title</label>

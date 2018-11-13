@@ -22,8 +22,8 @@ class Home extends Component {
 render(){
     return this.state.blogs.map(blog => {
         return (
-            <div className="row" key={blog.id}>
-                    <div className="card col-13 mt-20">
+            <div className="row" key={blog.id} id="blogCard">
+                    <div className="card col-12 mt-20">
                     <div className="card-header">{blog.title}</div>
                         <div className="card-body">
                             <p>{blog.content}</p>
