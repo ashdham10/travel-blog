@@ -55,7 +55,7 @@ class AddBlog extends Component {
                 <label for="blogContent">Content..</label>
                 <input type="content" className="form-control" id="blogContentInput" placeholder="Enter Blog Content" value={this.state.content} onChange={(e) => this.setState({ content: e.target.value })}/>
             </div>
-            <button type="submit" className="btn btn-primary" onClick={(e) => this.handleSubmit(e)}>Submit</button>
+            <button type="submit" className="btn btn-success" onClick={(e) => this.handleSubmit(e)}>Submit</button>
         </form>
         </div>
     )};
