@@ -25,7 +25,7 @@ class Home extends Component {
             return (
                 <div className="row" key={blog.id} id="blogCard">
                 <div className="card bg-dark" style={{width: '18rem'}}>
-                    <img className="card-img-top" src="/road-trip.jpg" alt="img-placeholder" />
+                    <img className="card-img-top" src="/travel-me.jpg" alt="img-placeholder" />
                     <div className="card-body">
                         <h5 className="card-title">{blog.title}</h5>
                         <Link to={`/blogs/${blog.id}`} className="btn btn-secondary btn-sm">Read More..</Link>
