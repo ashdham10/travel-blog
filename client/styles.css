@@ -1,10 +1,17 @@
 .jumbotron {
-    background-image: url("/jumbo-bg.jpg");
+    background-image: url("/img-placeholder.jpg");
     background-size: cover;
+    color: white;
+    height: 500px;
+    font-size: 3em;
+    text-align: center;
+    border-bottom: 5px dashed white;
 }
 
 body {
-  background-color: lightgrey;
+    background-image: url("/wallpaper.jpg");
+    /* background-size: cover; */
+    /* background-color: lightgray; */
 
 }
 
@@ -16,4 +23,21 @@ body {
 #addBlog {
     margin: 20px;
 
+}
+.navbar-brand .nav-item {
+    color: white;
+}
+
+.display-4 {
+    position: absolute;
+    left: 280px;
+    top: 280px;
+    size: 10em;
+    text-shadow: 3px 3px grey;
+}
+.lead {
+    position: absolute;
+    left: 300px;
+    top: 350px;
+    text-shadow: 2px 2px grey;
 }
