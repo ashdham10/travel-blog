@@ -16,15 +16,17 @@ body {
 }
 
 #blogCard {
-    margin-top: 20px;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    float: left;
+    color: white;
 }
 #addBlog {
     margin: 20px;
 
 }
-.navbar-brand .nav-item {
+.navbar.navbar-expand-lg li a {
     color: white;
 }
 
