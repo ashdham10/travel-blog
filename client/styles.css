@@ -10,9 +10,6 @@
 
 body {
     background-image: url("/wallpaper.jpg");
-    /* background-size: cover; */
-    /* background-color: lightgray; */
-
 }
 
 #blogCard {
@@ -21,10 +18,12 @@ body {
     margin-left: 10px;
     float: left;
     color: white;
+    border: 2px solid white;
 }
 #addBlog {
     margin: 20px;
-
+    background-color: rgb(194, 66, 34);
+    padding: 20px;
 }
 .navbar.navbar-expand-lg li a {
     color: white;

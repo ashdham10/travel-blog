@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import { Link } from 'react-router-dom';
+// import Footer from './Footer';
 
 class Home extends Component {
     constructor(props) {
@@ -33,6 +34,7 @@ class Home extends Component {
                 </div>
             );
         });
+        // return <Footer />
     };
 };
 
