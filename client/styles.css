@@ -8,6 +8,7 @@
     border-bottom: 5px dashed white;
 }
 
+
 body {
     background-image: url("/wallpaper.jpg");
 }
@@ -30,15 +31,21 @@ body {
 }
 
 .display-4 {
-    position: absolute;
+    position: static;
     left: 280px;
     top: 280px;
     size: 10em;
     text-shadow: 3px 3px grey;
+    line-height: 7;
 }
 .lead {
-    position: absolute;
+   position: fixed;
     left: 300px;
     top: 350px;
     text-shadow: 2px 2px grey;
+}
+#loginIn {
+    margin: 20px;
+    background-color: rgb(194, 66, 34);
+    padding: 20px;
 }

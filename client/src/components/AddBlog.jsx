@@ -48,11 +48,11 @@ class AddBlog extends Component {
         <div id="addBlog">
         <form>
             <div className="form-group">
-                <label className="title-label" for="blogTitle" style={{color: 'black', fontFamily: 'Shadows Into Light', fontWeight: 'bold', size:'60px'}}>Title</label>
+                <label className="title-label" for="blogTitle">Title</label>
                 <input type="title" className="form-control" id="blogTitleInput" placeholder="Enter Blog Title" value={this.state.title} onChange={(e) => this.setState({ title: e.target.value })}/>
             </div>
             <div className="form-group">
-                <label className="content-label" for="blogContent" style={{color: 'black', fontFamily: 'Shadows Into Light', fontWeight:'bold', size:'60px'}}>Content..</label>
+                <label className="content-label" for="blogContent">Content</label>
                 <input type="content" className="form-control" id="blogContentInput" placeholder="Enter Blog Content" value={this.state.content} onChange={(e) => this.setState({ content: e.target.value })}/>
             </div>
             <button type="submit" className="btn btn-dark" onClick={(e) => this.handleSubmit(e)}>Submit</button>
