@@ -4,7 +4,6 @@ import Header from './Header';
 import Home from './Home';
 import AddBlog from './AddBlog';
 import Blog from './Blog';
-import LoginIn from './LoginIn';
 import PrivateRoute from './auth/PrivateRoute';
 import AuthButton from './auth/authButton';
 import Login from './auth/login';
