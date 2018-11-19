@@ -5,7 +5,12 @@ import Home from './Home';
 import AddBlog from './AddBlog';
 import Blog from './Blog';
 import LoginIn from './LoginIn';
-// import Footer from './Footer';
+import PrivateRoute from './auth/PrivateRoute';
+import AuthButton from './auth/authButton';
+import Login from './auth/login';
+import Logout from './auth/logout';
+
+
 
 class Navigation extends Component {
 
@@ -18,14 +23,12 @@ class Navigation extends Component {
                     </div>
                     <Switch>
                         <Route exact path="/" component={Home} />
-                        <Route exact path="/AddBlog" component={AddBlog} />
+                        <PrivateRoute exact path="/AddBlog" component={AddBlog} />
                         <Route exact path="/blogs/:id" component={Blog} />
-                        <Route exact path="/LoginIn" component={LoginIn} />
-                        {/* <Route exact path="/" component={Footer} /> */}
+                        <Route exact path="/login" component={Login} />
+                        <Route exact path="/logout" component={Logout} />
                     </Switch>
-                    {/* <div>
-                        <Footer />
-                    </div> */}
+                  
                 </React.Fragment>
             </Router>
         );

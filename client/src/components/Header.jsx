@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Home from './Home';
 import AddBllog from './AddBlog';
 import LoginIn from './LoginIn';
+import AuthButton from './auth/authButton';
 
 class Header extends Component {
 
@@ -24,12 +25,9 @@ class Header extends Component {
                             <li class="nav-item">
                                 <Link to="/AddBlog" class="nav-link" href="#">Post Blog</Link>
                             </li>
-                            <li class="nav-item">
-                                <Link to="/LoginIn" class="nav-link" href="#">Login In</Link>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled" href="#">Sign Up</a>
-                            </li>
+                           <li>
+                               <AuthButton />
+                           </li>
                         </ul>
                     </div>
                 </nav>
