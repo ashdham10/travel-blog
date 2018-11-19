@@ -21,10 +21,11 @@ class Home extends Component {
             });
     };
     render() {
+
         return this.state.blogs.map(blog => {
             return (
-                <div className="row" key={blog.id} id="blogCard">
-                <div className="card bg-dark" style={{width: '18rem'}}>
+                <div  key={blog.id} id="blogCard">
+                <div className="card bg-dark col-6" style={{width: '18rem', maxWidth: '100%'}}>
                     <img className="card-img-top" src="/travel-me.jpg" alt="img-placeholder" />
                     <div className="card-body">
                         <h5 className="card-title">{blog.title}</h5>

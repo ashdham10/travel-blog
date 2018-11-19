@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import Table from '../table';
+
 let router = Router();
 
 let blogs = new Table('blogs');
