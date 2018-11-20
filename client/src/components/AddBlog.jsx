@@ -6,21 +6,10 @@ class AddBlog extends Component {
     constructor(props){
         super(props);
         this.state = {
-            // data: {},
             title: '',
             content: ''
         }
     }
-
-    // async componentDidMount(){
-    //     try {
-    //        let res = await fetch('/api/blogs');
-    //        let data = await res.json();
-    //        this.setState(data)    
-    //     } catch (error) {
-    //         console.log(error)
-    //     }
-    // }
 
     async handleSubmit(e){
         e.preventDefault();
