@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
+import * as blogServices from '../services/blogs';
 
 class AddBlog extends Component {
     constructor(props){
@@ -30,13 +31,7 @@ class AddBlog extends Component {
             content: this.state.content
         }
         try{
-            let res = await fetch('/api/blogs', {
-                method: 'POST',
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(blog)
-            });
+            let res = await blogServices.insert(this.state)
             this.props.history.replace('/');
         } catch (err){
             console.log(err);
