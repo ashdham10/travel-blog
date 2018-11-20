@@ -6,22 +6,21 @@ class AddBlog extends Component {
     constructor(props){
         super(props);
         this.state = {
-            data: {},
+            // data: {},
             title: '',
             content: ''
         }
     }
 
-    async componentDidMount(){
-        try {
-           let res = await fetch('/api/blogs');
-           let data = await res.json();
-           this.setState(data)
-        
-        } catch (error) {
-            console.log(error)
-        }
-    }
+    // async componentDidMount(){
+    //     try {
+    //        let res = await fetch('/api/blogs');
+    //        let data = await res.json();
+    //        this.setState(data)    
+    //     } catch (error) {
+    //         console.log(error)
+    //     }
+    // }
 
     async handleSubmit(e){
         e.preventDefault();
@@ -30,8 +29,9 @@ class AddBlog extends Component {
             title: this.state.title,
             content: this.state.content
         }
+
         try{
-            let res = await blogServices.insert(this.state)
+            let res = await blogServices.insert(blog)
             this.props.history.replace('/');
         } catch (err){
             console.log(err);
